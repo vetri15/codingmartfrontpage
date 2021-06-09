@@ -1,0 +1,71 @@
+<app-heading>
+
+</app-heading>
+
+<div class="customcenter">
+
+    <h4>DISTRICT COUNT : {{count }}</h4>
+<form (ngSubmit)="submitDistrict()">
+    <table>
+        <tr>
+            <td>
+                <label for="name">District Name</label>
+            </td>
+            <td>
+                <input type="text" name="name" [(ngModel)]="sample.name" placeholder="district name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="area">Area(sq mt)</label>
+            </td>
+            <td>
+                <input type="number" name="area" [(ngModel)]="sample.area" placeholder="district area">
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="population">Population</label>
+            </td>
+            <td>
+                <input type="number" name="population" [(ngModel)]="sample.population"
+                    placeholder="district population">
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                <input type="submit" value="Save">
+            </td>
+        </tr>
+    </table>
+</form>
+<div *ngIf="displayresult">
+    <div class="result">
+        <!-- <div>MAX AREA IS {{this.maxAreaName}}</div> -->
+        <div>Biggest District(Area wise)</div>
+    <app-district *ngFor="let District of darray" [d]='(District)' [max]='this.maxAreaName'></app-district>
+    </div>
+    <div class="result">
+        <!-- <div>MAX POPULATION IS {{this.maxpopulationname}}</div> -->
+        <div>Highly Populated District</div>
+    <app-district *ngFor="let District of darray" [d]='(District)' [max]='maxpopulationname'></app-district>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- <app-footer></app-footer> -->

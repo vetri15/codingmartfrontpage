@@ -1,0 +1,18 @@
+
+
+.green{
+    font-weight: bolder;
+    margin: 2px;
+    border: 1px solid green;
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(33, 180, 131, 0.486);
+}
+.red{
+    margin: 2px;
+    border-radius: 5px;
+    border : 1px solid red;
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(240, 37, 115, 0.486);
+}

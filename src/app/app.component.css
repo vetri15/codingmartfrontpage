@@ -1,0 +1,27 @@
+form label{
+    margin: 5px;
+    font-family: Calibri;
+}
+form{
+    display: inline-block;
+    align-items: center;
+    border: 2px solid black;
+}
+
+table{
+    display: block;
+}
+.customcenter{
+    width: 50%;
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: block;
+}
+.result{
+    border-radius: 5px;
+    margin: 20px;
+    border: 2px solid black;
+}
